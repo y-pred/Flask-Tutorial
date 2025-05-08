@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employees</title>
+</head>
+<body>
+    <h2>Employee List</h2>
+    <a href="/add">Add New</a>
+    <ul>
+        {% for emp in employees %}
+            <li>{{ emp.name }} - {{ emp.department }} - {{ emp.salary }} - {{ emp.date_of_joining }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
